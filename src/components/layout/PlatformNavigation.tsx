@@ -8,8 +8,8 @@ const PlatformNavigation = () => {
   const { isExpanded } = useSidebar()
 
   return (
-    <nav className={`fixed top-0 ${isExpanded ? 'left-64' : 'left-[60px]'} right-0 h-[60px] z-50 transition-all duration-300 ease-in-out`}>
-      <div className="h-full flex items-center justify-between px-6">
+    <nav className={`fixed top-0 ${isExpanded ? 'opacity-0 md:opacity-100 -left-[60px] md:left-auto' : 'left-[60px]'} md:right-0 h-[60px] transition-all duration-300 ease-in-out`}>
+      <div className="h-full flex items-center justify-between px-2">
         <Link href="/" className="flex items-center gap-3 text-2xl font-bold cursor-pointer">
           <div className={`flex items-center justify-center transition-all duration-300`}>
             <Image

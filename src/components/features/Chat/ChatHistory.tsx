@@ -115,7 +115,7 @@ const ChatHistory = () => {
     <>
       <div 
         className={`fixed top-0 left-0 h-screen bg-[#1a0d26]/80 backdrop-blur-xl border-r border-pink-400/20 transition-all duration-300 ease-in-out z-50 ${
-          isExpanded ? 'w-64' : 'w-[60px]'
+          isExpanded ? 'w-64' : 'w-0 md:w-[60px]'
         }`}
       >
         <div className="flex flex-col h-full">

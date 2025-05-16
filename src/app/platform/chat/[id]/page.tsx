@@ -59,14 +59,14 @@ export default function ChatPage() {
       <ChatHistory />
       
       {/* Main content area with character */}
-      <div className={`flex-1 flex transition-all duration-300 ease-in-out ${isExpanded ? 'ml-64' : 'ml-[60px]'}`}>
+      <div className={`flex-1 flex transition-all duration-300 ease-in-out ${isExpanded ? 'md:ml-64' : 'md:ml-[60px]'}`}>
         {/* Chat section */}
         <div className="flex-1 flex flex-col min-w-0">
         <PlatformNavigation />
-        <div className="flex-1 overflow-hidden">
+        <div className="flex-1 overflow-hidden mt-8">
           <ChatMessages />
         </div>
-          <div className="sticky bottom-0 z-20">
+          <div className="fixed md:sticky w-fullbottom-0 z-20">
             <div className="px-4 py-6 bg-gradient-to-t from-[#1a0f2e] via-[#1a0f2e]/80 to-transparent">
               <div className="max-w-3xl mx-auto backdrop-blur-xl bg-white/5 rounded-2xl shadow-lg border border-purple-400/20 hover:border-pink-400/30 transition-colors">
               <ChatInput />

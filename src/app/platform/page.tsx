@@ -28,12 +28,15 @@ export default function PlatformPage() {
       </div>
 
       <ChatHistory />
-      <div className={`flex-1 flex flex-col transition-all duration-300 ease-in-out ${isExpanded ? 'ml-64' : 'ml-[60px]'}`}>
+      <div className={`flex-1 flex flex-col transition-all duration-300 ease-in-out ${isExpanded ? 'ml-64' : 'md:ml-[64px]'}`}>
         <PlatformNavigation />
-        <div className="flex-1 overflow-hidden">
+        <div className="flex-1 overflow-hidden hidden md:inline-block">
           <WelcomeScreen />
         </div>
-        <div className="fixed bottom-0 right-0 z-20 transition-all duration-300 ease-in-out" style={{ left: isExpanded ? '16rem' : '60px' }}>
+        <div className='md:hidden gradient-to-br text-purple-400 font-bold absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 from-pink-500/10 via-purple-600/10 to-indigo-500/10 opacity-40 text-3xl w-full text-center'>
+          <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 mb-6">Welcome back, babe~ 💕</h1>
+        </div>
+        <div className="fixed md:sticky bottom-0 w-full md:w-auto z-20 transition-all duration-300 ease-in-out">
           <div className="px-4 py-6 bg-gradient-to-t from-[#150b1d] via-[#150b1d]/80 to-transparent">
             <div className="max-w-3xl mx-auto backdrop-blur-xl bg-white/5 rounded-2xl shadow-lg border border-pink-400/20 hover:border-pink-400/30 transition-colors">
               <ChatInput />
