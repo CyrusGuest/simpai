@@ -33,7 +33,7 @@ export default function PlatformPage() {
         <div className="flex-1 overflow-hidden hidden md:inline-block">
           <WelcomeScreen />
         </div>
-        <div className='md:hidden gradient-to-br text-purple-400 font-bold absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 from-pink-500/10 via-purple-600/10 to-indigo-500/10 opacity-40 text-3xl w-full text-center'>
+        <div className='md:hidden gradient-to-br text-purple-400 font-bold absolute px-10 -translate-x-1/2 -translate-y-1/2 top-1/3 left-1/2 from-pink-500/10 via-purple-600/10 to-indigo-500/10 opacity-40 text-3xl w-full text-center'>
           <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 mb-6">Welcome back, babe~ 💕</h1>
         </div>
         <div className="fixed md:sticky bottom-0 w-full md:w-auto z-20 transition-all duration-300 ease-in-out">
