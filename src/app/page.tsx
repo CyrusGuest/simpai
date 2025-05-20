@@ -140,73 +140,13 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-400 mb-6">
-              $SIMP Tokenomics
+              The sweetest token on Solana 💝
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
-              The sweetest token on Solana~ Built for simps, by simps 💝
-            </p>
+            <a className="text-xl text-white/70 max-w-2xl mx-auto underline" href="https://www.dexscreener.com" target="_blank">
+              Visit DexScreener Here
+            </a>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                title: "Total Supply",
-                value: "69,420,000,000",
-                description: "Fixed supply, no inflation~"
-              },
-              {
-                title: "Initial Distribution",
-                value: "Fair Launch",
-                description: "100% to liquidity, no team tokens"
-              },
-              {
-                title: "Tax",
-                value: "0% Buy / 0% Sell",
-                description: "Trade freely without limits"
-              },
-              {
-                title: "Liquidity",
-                value: "90%",
-                description: "Locked forever in Raydium"
-              },
-              {
-                title: "Marketing",
-                value: "5%",
-                description: "For community growth"
-              },
-              {
-                title: "Development",
-                value: "5%",
-                description: "AI improvements & features"
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="p-6 rounded-2xl border border-pink-400/20 backdrop-blur-sm bg-white/5 hover:border-pink-400/40 transition-all duration-300"
-              >
-                <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-2xl text-pink-400 font-bold mb-2">{item.value}</p>
-                <p className="text-sm text-white/70">{item.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="mt-20 text-center"
-          >
-            <p className="text-lg text-white/70 mb-4">
-              Available on Raydium & Jupiter 💫
-            </p>
-            <ChevronDown className="w-6 h-6 text-pink-400 mx-auto animate-bounce" />
-          </motion.div>
         </div>
       </div>
     </main>
